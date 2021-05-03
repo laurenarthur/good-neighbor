@@ -98,6 +98,7 @@ ul li:hover a {
 	letter-spacing: 1px;
 }
 .video{
+	align-items: center;
     margin-left: auto;
     margin-right: auto;
 }
