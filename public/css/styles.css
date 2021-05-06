@@ -8,14 +8,12 @@ body {
 	margin-bottom: 0px;
 	margin-left: 0px;
 	font-style: normal;
-	font-weight: 200;
 }
 /* Container */
 .container {
 	margin-left: auto;
 	margin-right: auto;
 	height: 1000px;
-	width:2193px;
 	background-color: #FFFFFF;
 }
 /* Navigation */
@@ -106,6 +104,9 @@ ul li:hover a {
     margin-right: auto;
 }
 /* About Section */
+.iconimg{
+	float:left;
+}
 .abouttitle{
 	float:right;
 	font-family: monospace, monospace;
@@ -141,7 +142,17 @@ ul li:hover a {
 	display: inline-block;
 	background-color: #FFFFFF;
 	margin-top: 0px;
-	width:2193px;
+	width:100%;
+}
+h4.cardtitle{
+	font-size: 20px;
+	clear: both;
+	padding-top: 5px !important;
+	margin-top: 0px !important;
+	margin-bottom: 0px !important;
+}
+p.cardinfo{
+	font-size:17px;
 }
 
 hr.new1 {
