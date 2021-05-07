@@ -105,7 +105,9 @@ ul li:hover a {
 }
 /* About Section */
 .iconimg{
-	float:left;
+	align-items: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 .abouttitle{
 	float:right;
@@ -163,7 +165,7 @@ hr.new1 {
 .card {
 	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 	transition: 0.3s;
-	display:inline-block;
+	display:inline-grid;
 	width:270px;
 	padding: 20px;
 	margin: 40px;
@@ -171,7 +173,7 @@ hr.new1 {
   }
   
 .card:hover {
-	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.253);
   }
   
 .cardbody {
@@ -198,33 +200,38 @@ hr.new1 {
 /* Parallax Section */
 .banner {
 	background-color: #2D9AB7;
-	background-image: url(../images/parallax.png);
-	height: 400px;
+	background-image: url(../images/Strip@4x.png);
+	height: 550px;
 	background-attachment: fixed;
 	background-size: cover;
 	background-repeat: no-repeat;
 }
 .parallax {
 	color: #FFFFFF;
-	text-align: right;
+	text-shadow: rgba(46, 46, 46, 0.616);
+	font-family: monospace, monospace;
+	text-align: left;
+	font-size: 40px;
 	padding-right: 100px;
-	padding-top: 110px;
+	padding-top: 10px;
 	letter-spacing: 2px;
 	margin-top: 0px;
+	padding-left: 10px !important;
 }
-.parallax_description {
+.location {
 	color: #FFFFFF;
-	text-align: right;
+	text-align: left;
 	padding-right: 100px;
-	width: 30%;
-	float: right;
-	font-weight: lighter;
-	line-height: 23px;
+	width: 200px;
+	float: left;
+	font-weight: 20px;
 	margin-top: 0px;
 	margin-right: 0px;
 	margin-bottom: 0px;
 	margin-left: 0px;
+	padding-left: 10px !important;
 }
+
 /* More info */
 footer {
 	background-color: #FFFFFF;
