@@ -213,7 +213,7 @@ hr.new1 {
 	text-align: left;
 	font-size: 40px;
 	padding-right: 100px;
-	padding-top: 10px;
+	padding-top: 20px;
 	letter-spacing: 2px;
 	margin-top: 0px;
 	padding-left: 10px !important;
@@ -231,6 +231,29 @@ hr.new1 {
 	margin-left: 0px;
 	padding-left: 10px !important;
 }
+
+.hopemap{
+	display: none;
+}
+.btn1 {
+	font-family: monospace, monospace;
+	background-color: white;
+  	color: black;
+  	border: 2px solid #f7f7f7;
+	  border-radius: 5px;
+	font-size: 25px;
+	padding: 5px 23px;
+	position: absolute;
+	left: 10px;
+	top: 3085px;
+	transition-duration: 0.4s;
+  }
+  
+.btn1:hover {
+	background-color: #2D9AB7; /* Green */
+	
+	color: white;
+  }
 
 /* More info */
 footer {
