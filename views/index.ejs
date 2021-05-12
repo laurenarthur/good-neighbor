@@ -94,16 +94,16 @@
                 </div>
                 <div id= "fortmap" class= "fortmap">
                 <p align="center">
-                    <img src="images/schedule.png" width="480" height="430"></img>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3365.8053211362076!2d-84.97439268385736!3d32.47789850648196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x888ccd0346f207d5%3A0xe8f49fd2eae368b6!2sThe%20Fort%20Church%20at%20Eastern%20Heights!5e0!3m2!1sen!2sus!4v1620401979987!5m2!1sen!2sus" width="570" height="430"  allowfullscreen="" loading="lazy"></iframe>
+                    <img src="images/schedule.png" width="410" height="430"></img>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3365.8053211362076!2d-84.97439268385736!3d32.47789850648196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x888ccd0346f207d5%3A0xe8f49fd2eae368b6!2sThe%20Fort%20Church%20at%20Eastern%20Heights!5e0!3m2!1sen!2sus!4v1620401979987!5m2!1sen!2sus" width="570" height="430"  allowfullscreen="" loading="lazy" style="border-width: 0px;"></iframe>
                 </p>
                 </div>
 
                 <div id= "hopemap" class= "hopemap">
                     
                 <p align="center">
-                    <button type="button" class="btn1 ">FORM</button>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3366.2722551365496!2d-84.91964568482588!3d32.46540898106707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f333b26900a689%3A0x92cec3a51254e171!2sHope%20Springs%20Community%20Church!5e0!3m2!1sen!2sus!4v1620404107412!5m2!1sen!2sus" width="570" height="430" allowfullscreen="" loading="lazy"></iframe></iframe>
+                    <div id="btn1" class="btn1" href="#">FORM</div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3366.2722551365496!2d-84.91964568482588!3d32.46540898106707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f333b26900a689%3A0x92cec3a51254e171!2sHope%20Springs%20Community%20Church!5e0!3m2!1sen!2sus!4v1620404107412!5m2!1sen!2sus" width="570" height="430" allowfullscreen="" loading="lazy" style="border-width: 0px; padding-left: 300px;"></iframe>
                 </p>
                 </div>
         </section>
@@ -122,7 +122,7 @@
                     <h4 class="cardtitle">FINANCIAL PARTNER</h4> 
                     <hr class="new1"></hr>
                     <p class="cardinfo">This doesn’t happen for free, but we offer it for free. We would love to partner with you “To show more kids Jesus by showing up and showing them love. “</p> 
-                    <button type="button" class="btn2 ">Donate</button>
+                    <div id="btn2" class="btn2" href="#">Donate</div>
                 </div>
             </div>
             <div class="card">
@@ -149,25 +149,93 @@
         </div>
 
         <section class="footer_banner" id="contact">
-                <div class="box4">
-                    <div class="cardbody">
-                        <h4 class="cardtitle">Michael Knowles</h4> 
-                        <hr class="new1"></hr>
-                        <p class="cardinfo">Our goal is to be in a 1-1 ratio of adults to students. We always need help with set up, clean up, teaching, leading, and participating in kids lives. </p> 
-                    </div>
-                    <div class="contactimg">
-                        <img src="images/placeholder.jpg" width="330px" height="400px" ></img>
-                    </div>
+            <div id="button2" class="button2" href="#">CONTACT</div>
 
-                </div>
-                <div class="button">CONTACT</div>
-
-        </section>
+            <div class="modal_info">
+                <form class="form">
+                    <h2>CONTACT US</h2>
+                    <p type="Name:"><input placeholder="Write your name here.."></input></p>
+                    <p type="Email:"><input placeholder="Let us know how to contact you back.."></input></p>
+                    <p type="Message:"><input placeholder="What would you like to tell us.."></input></p>
+                    <button>Send Message</button>
+                    <div>
+                        <span class="fa fa-phone"></span>001 1023 567
+                        <span class="fa fa-envelope-o"></span> contact@company.com
+                    </div>
+                    </form>
+            </div>
+            <div class="modal_overlay">
+            </div>
         
         <div class="copyright">&copy;2020- <strong>Light Theme</strong></div>
         </div>
 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+    <script>
+        (function(){
+  var $content = $('.modal_info').detach();
+
+  $('.button2').on('click', function(e){
+    modal.open({
+      content: $content,
+      width: 540,
+      height: 270,
+    });
+    $content.addClass('modal_content');
+    $('.modal, .modal_overlay').addClass('display');
+    $('button2').addClass('load');
+  });
+}());
+
+var modal = (function(){
+
+  var $close = $('<button role="button" class="modal_close" title="Close"><span></span></button>');
+  var $content = $('<div class="modal_content"/>');
+  var $modal = $('<div class="modal"/>');
+  var $window = $(window);
+
+  $modal.append($content, $close);
+
+  $close.on('click', function(e){
+    $('.modal, .modal_overlay').addClass('conceal');
+    $('.modal, .modal_overlay').removeClass('display');
+    $('.open_button').removeClass('load');
+    e.preventDefault();
+    modal.close();
+  });
+
+  return {
+    center: function(){
+      var top = Math.max($window.height() - $modal.outerHeight(), 0) / 2;
+      var left = Math.max($window.width() - $modal.outerWidth(), 0) / 2;
+      $modal.css({
+        top: top + $window.scrollTop(),
+        left: left + $window.scrollLeft(),
+      });
+    },
+    open: function(settings){
+      $content.empty().append(settings.content);
+
+      $modal.css({
+        width: settings.width || 'auto',
+        height: settings.height || 'auto'
+      }).appendTo('body');
+
+      modal.center();
+      $(window).on('resize', modal.center);
+    },
+    close: function(){
+      $content.empty();
+      $modal.detach();
+      $(window).off('resize', modal.center);
+    }
+  };
+}());
+    </script>
+
 <script>
+
     function displayMap(elementValue) {
         var loc = document.getElementById("location");
         var fmap = document.getElementById("fortmap");
