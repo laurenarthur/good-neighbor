@@ -116,9 +116,11 @@ ul li:hover a {
 	font-size: 40px;
     color: #FFFFFF;
 	padding-right:50px;
+	margin:auto;
 }
 .box2{
 	width: 600px;
+	height:100px;
     background-color:  #474B4D;
 	border-bottom-left-radius: 60px;
 	border-bottom-right-radius: 0px;
@@ -251,7 +253,7 @@ hr.new1 {
 	padding: 5px 23px;
 	position: absolute;
 	left: 30px;
-	top: 2900px;
+	top: 2850px;
 	transition-duration: 0.4s;
   }
   
@@ -292,10 +294,12 @@ hr.new1 {
 	font-size: 40px;
     color: #FFFFFF;
 	padding-left:50px;
+	margin:auto;
 }
 
 .box3{
 	width: 600px;
+	height:100px;
     background-color:  #474B4D;
 	border-bottom-left-radius: 0px;
 	border-bottom-right-radius: 60px;
