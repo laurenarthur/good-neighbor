@@ -214,9 +214,8 @@ hr.new1 {
 	text-shadow: rgba(46, 46, 46, 0.616);
 	font-family: monospace, monospace;
 	text-align: left;
-	font-size: 40px;
+	font-size: 45px;
 	padding-right: 100px;
-	padding-top: 10px;
 	letter-spacing: 2px;
 	margin-top: 0px;
 	padding-left: 10px !important;
@@ -232,29 +231,26 @@ hr.new1 {
 	margin-right: 0px;
 	margin-bottom: 0px;
 	margin-left: 0px;
-	padding-top: 15px !important;
+	padding-top: 10px !important;
 	padding-left: 10px !important;
 }
 #location{
 	width: 110px;
 }
 
-.hopemap{
-	display: none;
-}
 .btn1 {
 	font-family: monospace, monospace;
     text-align: center;
-    font-size: x-large;
+    font-size: large;
   	border: 2px solid #f7f7f7;
-	  background-color: #2D9AB7;
+	background-color: #2D9AB7;
 	letter-spacing: 1px;
 	border-radius: 55px;
 	padding: 5px 23px;
 	position: absolute;
-	left: 30px;
-	top: 2850px;
 	transition-duration: 0.4s;
+	margin-top: 15px;
+	margin-left: 12px;
   }
   
 .btn1:hover {
