@@ -374,7 +374,7 @@ form{
 h2{
 	margin:10px 0;
 	padding-bottom:10px;
-	width:180px;
+	width:143px;
 	color:#000000;
 	border-bottom:3px solid #2D9AB7
 }
@@ -425,8 +425,8 @@ button{
   
   
   .modal_info {
-	background: #000000;
-	padding: 50px 100px;
+	background: #e7e7e7;
+	padding: 30px 100px;
 	text-align: center;
   }
   
@@ -504,8 +504,8 @@ button{
 	width: 52px;
 	height: 52px;
 	position: absolute;
-	right: 30px;
-	top: 30px;
+	right: 2px;
+	top: 2px;
 	-webkit-transition: -webkit-transform 600ms;
 	-moz-transition: -moz-transform 600ms;
 	-ms-transition: -ms-transform 600ms;
