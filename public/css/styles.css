@@ -67,6 +67,7 @@ ul li:hover a {
 }
 /* Hero Section */
 .hero {
+	width:100%;
 	box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.61);
 	background-image:url("/images/ColumbusGa.jpg");
 	background-repeat: no-repeat;
@@ -410,10 +411,9 @@ button{
   
   .modal {
 	opacity: 0;
-	padding: 50px;
+	padding: 10px;
 	position: absolute;
 	z-index: 1100;
-	background-color: rgba(41, 41, 41, 0.562);
 	width: 100%;
     height: 100%;
 	-webkit-transition: opacity 600ms linear 600ms;
@@ -425,7 +425,7 @@ button{
   
   
   .modal_info {
-	background: #f8f6f1;
+	background: #000000;
 	padding: 50px 100px;
 	text-align: center;
   }
@@ -435,8 +435,8 @@ button{
   .display {
 	opacity: 1;
 	visibility: visible;
-	width: 540px;
-	height: 460px;
+	width: 340px;
+	height: 360px;
   }
   
   .conceal {
@@ -611,30 +611,80 @@ footer {
 	display: none;
 }
 
+
 /* Mobile */
-@media (max-width: 320px) {
+@media (max-width: 375px) {
+
+	.hero{
+		width: 355px;
+		height:600px;
+	}
+	img#mainlogo{
+		width:360px;
+		height:370px;
+
+	}
+	.box{
+		width: 310px;
+	}
+	.tagline{
+		font-size: large;
+	}
+
+	iframe#video{
+		width:370px;
+		height:370px;
+
+	}
+
+	img#schedule{
+		display:none;
+	}
+
+	button#btn1{
+		margin-left: 75px;
+	}
+	p#locationh{
+		padding-top:0px;
+		font-weight: 40px;
+	}
+
+	iframe#fortmapfr{
+		padding-top:30px;
+		width:340px;
+		height:370px;
+	}
+	p#actiontitle{
+		width:10px;
+	}
+
+	iframe#popupFrame{
+		width:370px;
+		height:370px;
+	}
+
+	form#form{
+		width:100%;
+		height:370px;
+	}
+	.box3{
+		width:355px;
+		border-bottom-left-radius: 0px;
+		border-bottom-right-radius: 0px;
+		border-top-left-radius: 0px;
+		border-top-right-radius: 0px;
+	}
+
 .logo {
 	width: 100%;
 	text-align: center;
-	margin-top: 13px;
-	margin-right: 0px;
-	margin-bottom: 0px;
-	margin-left: 0px;
 }
 .container header nav {
-	margin-top: 0px;
-	margin-right: 0px;
-	margin-bottom: 0px;
-	margin-left: 0px;
 	width: 100%;
 	float: none;
 	display: none;
 }
 nav ul li {
-	margin-top: 0px;
-	margin-right: 0px;
-	margin-bottom: 0px;
-	margin-left: 0px;
 	width: 100%;
 	text-align: center;
 }
@@ -653,28 +703,14 @@ nav ul li {
 	width: 100%;
 	margin-top: 0px;
 }
-.parallax {
+p.parallax {
 	text-align: center;
-	margin-top: 0px;
-	margin-right: 0px;
-	margin-bottom: 0px;
 	margin-left: 0px;
-	padding-top: 40%;
-	padding-right: 0px;
-	padding-bottom: 0px;
-	padding-left: 0px;
 	width: 100%;
 	font-size: 18px;
 }
 .parallax_description {
-	padding-top: 0px;
-	padding-right: 0px;
-	padding-bottom: 0px;
-	padding-left: 0px;
 	width: 90%;
-	margin-top: 25px;
-	margin-right: 0px;
-	margin-bottom: 0px;
 	margin-left: 12px;
 	float: none;
 	text-align: center;
@@ -688,9 +724,6 @@ nav ul li {
 	line-height: 22px;
 }
 .hero_header {
-	padding-left: 10px;
-	padding-right: 10px;
-	line-height: 22px;
 	text-align: center;
 }
 }
@@ -705,31 +738,6 @@ nav ul li {
 	margin-bottom: 0px;
 	margin-left: 0px;
 	color: #043745;
-}
-.container header nav {
-	margin-top: 0px;
-	margin-right: 0px;
-	margin-bottom: 0px;
-	margin-left: 0px;
-	width: 100%;
-	float: none;
-	overflow: auto;
-	display: inline-block;
-	background: #52bad5;
-}
-header nav ul {
-	padding: 0px;
-	float: none;
-}
-nav ul li {
-	margin-top: 0px;
-	margin-right: 0px;
-	margin-bottom: 0px;
-	margin-left: 0px;
-	width: 100%;
-	text-align: center;
-	padding-top: 8px;
-	padding-bottom: 8px;
 }
 .text_column {
 	width: 100%;

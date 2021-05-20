@@ -14,9 +14,9 @@
 </head>
 <body>
      <div class="container"> 
-        <header> <a href="">
+        <header> 
             <img src="images/Black-Logo-White-Background.png" width="80" height="80"></img>
-            </a>
+            
                 <nav>
                     <ul>
                         <li><a href="#about">ABOUT US</a></li>
@@ -28,14 +28,14 @@
         </header>
 
         <section class="hero" id="hero">
-                <p align="center" style="height:920px;"><img src="images/Good-Neighbor-Tutoring-White-No-Background.png" width="1000" height="1000"></img></p>
+                <p align="center" style="width:100%"><img id="mainlogo" src="images/Good-Neighbor-Tutoring-White-No-Background.png" width="1000" height="1000"></img></p>
                 <div class="box" >
                     <p class="tagline" >"SHOW PEOPLE JESUS BY HOW WE SHOW UP AND SHOW LOVE"</p>
                 </div>
         </section>
         <section class="about" id="about">
             <p align="center">
-                <iframe width="1400" height="850" src="https://www.youtube.com/embed/7Zd8XBetR44?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; " allowfullscreen></iframe>
+                <iframe id="video" width="1400" height="850" src="https://www.youtube.com/embed/7Zd8XBetR44?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; " allowfullscreen></iframe>
             </p>
                 <div class="box2">
                     <p class="abouttitle">Four Pillars</p> 
@@ -84,15 +84,15 @@
                 
         </div>
         <section class="banner" id="banner">
-                <p class="parallax">LOCATION</p>
+                <p class="parallax" id="locationh">LOCATION</p>
                 <button title="Application" class="btn1" id="btn1" type="button">
                         Appllication
                     </button>
                 
                 <div id= "fortmap" class= "fortmap" type="button">
                 <p align="center">
-                    <img src="images/schedule.png" width="410" height="430"></img>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3365.8053211362076!2d-84.97439268385736!3d32.47789850648196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x888ccd0346f207d5%3A0xe8f49fd2eae368b6!2sThe%20Fort%20Church%20at%20Eastern%20Heights!5e0!3m2!1sen!2sus!4v1620401979987!5m2!1sen!2sus" width="570" height="430"  allowfullscreen="" loading="lazy" style="border-width: 0px;"></iframe>
+                    <img id="schedule" src="images/schedule.png" width="410" height="430"></img>
+                    <iframe id="fortmapfr" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3365.8053211362076!2d-84.97439268385736!3d32.47789850648196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x888ccd0346f207d5%3A0xe8f49fd2eae368b6!2sThe%20Fort%20Church%20at%20Eastern%20Heights!5e0!3m2!1sen!2sus!4v1620401979987!5m2!1sen!2sus" width="570" height="430"  allowfullscreen="" loading="lazy" style="border-width: 0px;"></iframe>
                 </p>
                 </div>
         </section>
@@ -103,7 +103,7 @@
 
         <section class="action" id="action">
                 <div class="box3">
-                    <p class="actiontitle">Action</p> 
+                    <p class="actiontitle" id="actiontitle">Action</p> 
         </section>
         
         <div class="gallery" align="center">
@@ -151,18 +151,19 @@
         </div>
 
         <section class="footer_banner" id="contact">
-            
-            <div id="button2" class="button2" href="#">CONTACT</div>
+
+
+        <div id="button2" class="button2" href="#">CONTACT</div>
 
             <div class="modal_info">
-                <form class="form">
+                <form class="form" id="form">
                     <h2>CONTACT US</h2>
                     <p type="Name:"><input placeholder="Write your name here.."></input></p>
                     <p type="Email:"><input placeholder="Let us know how to contact you back.."></input></p>
                     <p type="Message:"><input placeholder="What would you like to tell us.."></input></p>
                     <button>Send Message</button>
                     
-                    </form>
+                </form>
             </div>
         
         <div class="copyright">&copy;2021- <strong>Light Theme</strong></div>
@@ -177,8 +178,8 @@
   $('.button2').on('click', function(e){
     modal.open({
       content: $content,
-      width: 540,
-      height: 460,
+      width: 340,
+      height: 360,
     });
     $content.addClass('modal_content');
     $('.modal ').addClass('display');
