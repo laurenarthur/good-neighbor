@@ -11,7 +11,7 @@ body {
 }
 /* Container */
 .container {
-	width:100%;
+	width:auto;
 	margin-left: auto;
 	margin-right: auto;
 	height: 1000px;
@@ -23,6 +23,9 @@ header {
 	height: 5%;
 	background-color: #52bad5;
 	border-bottom: 1px solid #2C9AB7;
+}
+img#toplogo{
+	position:absolute;
 }
 .logo {
 	color: #fff;
@@ -72,9 +75,12 @@ ul li:hover a {
 	box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.61);
 	background-image:url("/images/ColumbusGa.jpg");
 	background-repeat: no-repeat;
-	background-size: 2193px 1700px;
-    padding:10px;
     margin-left: auto;
+    margin-right: auto;
+	padding-top:10px;
+}
+img#mainlogo{
+	margin-left: auto;
     margin-right: auto;
 }
 .box{
@@ -613,15 +619,17 @@ footer {
 }
 
 /* Mobile */
-@media screen and (min-width:375px) and (max-width: 1024px) {
+@media screen and (min-width:450px) and (max-width: 1024px) {
 
 	.hero{
 		width: 100%;
 		height:600px;
 	}
 	img#mainlogo{
-		width:460px;
-		height:420px;
+		margin-left: auto;
+		margin-right:auto;
+		width:85%;
+		height:380px;
 
 	}
 	.box{
@@ -732,15 +740,17 @@ p.parallax {
 
 
 /* Mobile */
-@media screen and (max-width: 375px) {
+@media screen and (min-width:375px) and (max-width: 450px) {
 
 	.hero{
-		width: 355px;
+		width: 100%;
 		height:600px;
 	}
 	img#mainlogo{
-		width:360px;
-		height:370px;
+		margin-left: auto;
+		margin-right:auto;
+		width:85%;
+		height:270px;
 
 	}
 	.box{
