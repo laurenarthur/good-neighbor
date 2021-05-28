@@ -6,6 +6,9 @@
     <title>Good Neighbor</title>
         <link href="css/styles.css" rel="stylesheet">
         <script src="http://use.edgefonts.net/source-sans-pro:n2:default.js" type="text/javascript"></script>
+        <!-- Noscript content for added SEO -->
+<noscript><a href="https://www.eventbrite.com/e/suicide-awareness-training-and-prevention-tickets-156574451399" rel="noopener noreferrer" target="_blank"></noscript>
+    <!-- You can customize this button any way you like -->
 
 </head>
 <body>
@@ -25,9 +28,27 @@
 
         <section class="hero" id="hero">
                 <p align="center"style="margin-bottom:0px;" ><img id="mainlogo" src="images/Good-Neighbor-Tutoring-White-No-Background.png" width="1000" height="1000"></img></p>
+                <button id="eventbrite-widget-modal-trigger-156574451399" type="button" style="position:absolute; left:930px; bottom:130px;">Suicide Awareness Training</button>
+                <noscript></a>Buy Tickets on Eventbrite</noscript>
                 <div class="box" >
                     <p class="tagline" >"SHOW PEOPLE JESUS BY HOW WE SHOW UP AND SHOW LOVE"</p>
                 </div>
+                
+                <script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
+                
+                <script type="text/javascript">
+                    var exampleCallback = function() {
+                        console.log('Order complete!');
+                    };
+                
+                    window.EBWidgets.createWidget({
+                        widgetType: 'checkout',
+                        eventId: '156574451399',
+                        modal: true,
+                        modalTriggerElementId: 'eventbrite-widget-modal-trigger-156574451399',
+                        onOrderComplete: exampleCallback
+                    });
+                </script>
         </section>
         <section class="about" id="about">
             <p align="center">
